@@ -13,7 +13,7 @@ public class Main {
         Connection connection = MySQLConnect.setupConnection();
 
         //Setup statement string
-        String sql = "select * from country";
+        String sql = "select * from country Order By population ASC";
 
         //Initialize statement
         Statement statement = connection.createStatement();
@@ -22,7 +22,7 @@ public class Main {
         ResultSet resultSet = statement.executeQuery(sql);
 
         while(resultSet.next()){
-            System.out.println(resultSet.getString("name"));
+            System.out.println("Name: " + resultSet.getString("name") +" Population: " +resultSet.getString("population"));
         }
 
         connection.close();
