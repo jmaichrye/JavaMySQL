@@ -1,0 +1,250 @@
+This program can be used to provide a quickstart to developing between Java and MySQL.  The IDE used for the project
+was IntelliJ.  The mysql connector used is mysql-connector-java-5.1.41-bin.jar.  This file is excluded from
+the github.  To have a working program you must install the correct plugin in JavaMySQL/libs folder.
+
+This program assumes you have a local MYSQL server running.  The password is set to root yet you can replace
+this with your local root's password.  The program selects the country table from the word database.  These are the
+sample files provided when you download the most recent mysql.  This program demonstrates connecting to a database and
+how you can utilize JDBC libraries to automate database access.
+
+Run:
+
+Name: Antarctica Population: 0
+Name: French Southern territories Population: 0
+Name: Bouvet Island Population: 0
+Name: Heard Island and McDonald Islands Population: 0
+Name: British Indian Ocean Territory Population: 0
+Name: South Georgia and the South Sandwich Islands Population: 0
+Name: United States Minor Outlying Islands Population: 0
+Name: Pitcairn Population: 50
+Name: Cocos (Keeling) Islands Population: 600
+Name: Holy See (Vatican City State) Population: 1000
+Name: Falkland Islands Population: 2000
+Name: Norfolk Island Population: 2000
+Name: Niue Population: 2000
+Name: Tokelau Population: 2000
+Name: Christmas Island Population: 2500
+Name: Svalbard and Jan Mayen Population: 3200
+Name: Saint Helena Population: 6000
+Name: Saint Pierre and Miquelon Population: 7000
+Name: Anguilla Population: 8000
+Name: Montserrat Population: 11000
+Name: Nauru Population: 12000
+Name: Tuvalu Population: 12000
+Name: Wallis and Futuna Population: 15000
+Name: Turks and Caicos Islands Population: 17000
+Name: Palau Population: 19000
+Name: Cook Islands Population: 20000
+Name: Virgin Islands, British Population: 21000
+Name: Gibraltar Population: 25000
+Name: San Marino Population: 27000
+Name: Liechtenstein Population: 32300
+Name: Monaco Population: 34000
+Name: Cayman Islands Population: 38000
+Name: Saint Kitts and Nevis Population: 38000
+Name: Faroe Islands Population: 43000
+Name: Greenland Population: 56000
+Name: Marshall Islands Population: 64000
+Name: Bermuda Population: 65000
+Name: American Samoa Population: 68000
+Name: Antigua and Barbuda Population: 68000
+Name: Dominica Population: 71000
+Name: Seychelles Population: 77000
+Name: Andorra Population: 78000
+Name: Northern Mariana Islands Population: 78000
+Name: Kiribati Population: 83000
+Name: Virgin Islands, U.S. Population: 93000
+Name: Grenada Population: 94000
+Name: Tonga Population: 99000
+Name: Aruba Population: 103000
+Name: Saint Vincent and the Grenadines Population: 114000
+Name: Micronesia, Federated States of Population: 119000
+Name: Sao Tome and Principe Population: 147000
+Name: Mayotte Population: 149000
+Name: Saint Lucia Population: 154000
+Name: Guam Population: 168000
+Name: Samoa Population: 180000
+Name: French Guiana Population: 181000
+Name: Vanuatu Population: 190000
+Name: New Caledonia Population: 214000
+Name: Netherlands Antilles Population: 217000
+Name: French Polynesia Population: 235000
+Name: Belize Population: 241000
+Name: Barbados Population: 270000
+Name: Iceland Population: 279000
+Name: Maldives Population: 286000
+Name: Western Sahara Population: 293000
+Name: Bahamas Population: 307000
+Name: Brunei Population: 328000
+Name: Malta Population: 380200
+Name: Martinique Population: 395000
+Name: Suriname Population: 417000
+Name: Cape Verde Population: 428000
+Name: Luxembourg Population: 435700
+Name: Solomon Islands Population: 444000
+Name: Equatorial Guinea Population: 453000
+Name: Guadeloupe Population: 456000
+Name: Macao Population: 473000
+Name: Comoros Population: 578000
+Name: Qatar Population: 599000
+Name: Bahrain Population: 617000
+Name: Djibouti Population: 638000
+Name: RÃ©union Population: 699000
+Name: Cyprus Population: 754700
+Name: Fiji Islands Population: 817000
+Name: Guyana Population: 861000
+Name: East Timor Population: 885000
+Name: Swaziland Population: 1008000
+Name: Mauritius Population: 1158000
+Name: Guinea-Bissau Population: 1213000
+Name: Gabon Population: 1226000
+Name: Trinidad and Tobago Population: 1295000
+Name: Gambia Population: 1305000
+Name: Estonia Population: 1439200
+Name: Botswana Population: 1622000
+Name: Namibia Population: 1726000
+Name: Kuwait Population: 1972000
+Name: Slovenia Population: 1987800
+Name: Macedonia Population: 2024000
+Name: Bhutan Population: 2124000
+Name: Lesotho Population: 2153000
+Name: Latvia Population: 2424200
+Name: United Arab Emirates Population: 2441000
+Name: Oman Population: 2542000
+Name: Jamaica Population: 2583000
+Name: Mongolia Population: 2662000
+Name: Mauritania Population: 2670000
+Name: Panama Population: 2856000
+Name: Congo Population: 2943000
+Name: Palestine Population: 3101000
+Name: Liberia Population: 3154000
+Name: Lebanon Population: 3282000
+Name: Uruguay Population: 3337000
+Name: Albania Population: 3401200
+Name: Armenia Population: 3520000
+Name: Singapore Population: 3567000
+Name: Central African Republic Population: 3615000
+Name: Lithuania Population: 3698500
+Name: Ireland Population: 3775100
+Name: Eritrea Population: 3850000
+Name: New Zealand Population: 3862000
+Name: Puerto Rico Population: 3869000
+Name: Bosnia and Herzegovina Population: 3972000
+Name: Costa Rica Population: 4023000
+Name: Moldova Population: 4380000
+Name: Turkmenistan Population: 4459000
+Name: Croatia Population: 4473000
+Name: Norway Population: 4478500
+Name: Togo Population: 4629000
+Name: Kyrgyzstan Population: 4699000
+Name: Papua New Guinea Population: 4807000
+Name: Sierra Leone Population: 4854000
+Name: Georgia Population: 4968000
+Name: Nicaragua Population: 5074000
+Name: Jordan Population: 5083000
+Name: Finland Population: 5171300
+Name: Denmark Population: 5330000
+Name: Slovakia Population: 5398700
+Name: Laos Population: 5433000
+Name: Paraguay Population: 5496000
+Name: Libyan Arab Jamahiriya Population: 5605000
+Name: Benin Population: 6097000
+Name: Tajikistan Population: 6188000
+Name: Israel Population: 6217000
+Name: El Salvador Population: 6276000
+Name: Honduras Population: 6485000
+Name: Burundi Population: 6695000
+Name: Hong Kong Population: 6782000
+Name: Switzerland Population: 7160400
+Name: Guinea Population: 7430000
+Name: Chad Population: 7651000
+Name: Rwanda Population: 7733000
+Name: Azerbaijan Population: 7734000
+Name: Austria Population: 8091800
+Name: Bulgaria Population: 8190900
+Name: Haiti Population: 8222000
+Name: Bolivia Population: 8329000
+Name: Dominican Republic Population: 8495000
+Name: Sweden Population: 8861400
+Name: Zambia Population: 9169000
+Name: Senegal Population: 9481000
+Name: Tunisia Population: 9586000
+Name: Portugal Population: 9997600
+Name: Hungary Population: 10043200
+Name: Somalia Population: 10097000
+Name: Belarus Population: 10236000
+Name: Belgium Population: 10239000
+Name: Czech Republic Population: 10278100
+Name: Greece Population: 10545700
+Name: Yugoslavia Population: 10640000
+Name: Niger Population: 10730000
+Name: Malawi Population: 10925000
+Name: Cambodia Population: 11168000
+Name: Cuba Population: 11201000
+Name: Mali Population: 11234000
+Name: Guatemala Population: 11385000
+Name: Zimbabwe Population: 11669000
+Name: Burkina Faso Population: 11937000
+Name: Ecuador Population: 12646000
+Name: Angola Population: 12878000
+Name: CÃ´te dÂ’Ivoire Population: 14786000
+Name: Cameroon Population: 15085000
+Name: Chile Population: 15211000
+Name: Netherlands Population: 15864000
+Name: Madagascar Population: 15942000
+Name: Syria Population: 16125000
+Name: Kazakstan Population: 16223000
+Name: Yemen Population: 18112000
+Name: Sri Lanka Population: 18827000
+Name: Australia Population: 18886000
+Name: Mozambique Population: 19680000
+Name: Ghana Population: 20212000
+Name: Saudi Arabia Population: 21607000
+Name: Uganda Population: 21778000
+Name: Malaysia Population: 22244000
+Name: Taiwan Population: 22256000
+Name: Romania Population: 22455500
+Name: Afghanistan Population: 22720000
+Name: Iraq Population: 23115000
+Name: Nepal Population: 23930000
+Name: North Korea Population: 24039000
+Name: Venezuela Population: 24170000
+Name: Uzbekistan Population: 24318000
+Name: Peru Population: 25662000
+Name: Morocco Population: 28351000
+Name: Sudan Population: 29490000
+Name: Kenya Population: 30080000
+Name: Canada Population: 31147000
+Name: Algeria Population: 31471000
+Name: Tanzania Population: 33517000
+Name: Argentina Population: 37032000
+Name: Poland Population: 38653600
+Name: Spain Population: 39441700
+Name: South Africa Population: 40377000
+Name: Colombia Population: 42321000
+Name: Myanmar Population: 45611000
+Name: South Korea Population: 46844000
+Name: Ukraine Population: 50456000
+Name: Congo, The Democratic Republic of the Population: 51654000
+Name: Italy Population: 57680000
+Name: France Population: 59225700
+Name: United Kingdom Population: 59623400
+Name: Thailand Population: 61399000
+Name: Ethiopia Population: 62565000
+Name: Turkey Population: 66591000
+Name: Iran Population: 67702000
+Name: Egypt Population: 68470000
+Name: Philippines Population: 75967000
+Name: Vietnam Population: 79832000
+Name: Germany Population: 82164700
+Name: Mexico Population: 98881000
+Name: Nigeria Population: 111506000
+Name: Japan Population: 126714000
+Name: Bangladesh Population: 129155000
+Name: Russian Federation Population: 146934000
+Name: Pakistan Population: 156483000
+Name: Brazil Population: 170115000
+Name: Indonesia Population: 212107000
+Name: United States Population: 278357000
+Name: India Population: 1013662000
+Name: China Population: 1277558000
